@@ -8,6 +8,7 @@ const paisesData = [
         moeda: "Real (BRL)",
         lingua: "Português",
         pontoTuristico: "Cristo Redentor (Rio de Janeiro)"
+        
     },
     {
         nome: "Japão",

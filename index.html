@@ -10,14 +10,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Barra de Acessibilidade -->
     <div class="accessibility-bar" role="complementary" aria-label="Ferramentas de acessibilidade">
         <button id="btn-contrast" aria-label="Alternar alto contraste">Alto Contraste</button>
         <button id="btn-font-decrease" aria-label="Diminuir tamanho do texto">A-</button>
         <button id="btn-font-increase" aria-label="Aumentar tamanho do texto">A+</button>
     </div>
 
-    <!-- Hero Section -->
     <header class="hero">
         <div class="container">
             <span class="badge">Dados Atualizados de 2026</span>
@@ -27,7 +25,6 @@
         </div>
     </header>
 
-    <!-- Stats Rápidos (Gatilho de Autoridade/Dados Reais) -->
     <section class="quick-stats">
         <div class="container grid-stats">
             <div class="stat-card">
@@ -45,7 +42,6 @@
         </div>
     </section>
 
-    <!-- Carrossel Dinâmico de Países Destacados -->
     <section id="explorar" class="carousel-section">
         <div class="container">
             <h2>Nações em Destaque</h2>
@@ -53,35 +49,73 @@
             
             <div class="carousel-container">
                 <button class="carousel-nav prev" id="prev-btn" aria-label="País anterior">&lsaquo;</button>
+                
                 <div class="carousel-track" id="carousel-track">
-                    <!-- Gerado Dinamicamente via JavaScript -->
-                </div>
-                <button class="carousel-nav next" id="next-btn" aria-label="Próximo país">&rsaquo;</button>
-            </div>
-        </div>
-    </section>
+                    
+                    <div class="country-card">
+                        <div class="card-header">
+                            <img src="https://images.unsplash.com/photo-1599733589046-10c005739ef9?q=80&w=150" alt="Bandeira do Brasil" class="country-flag-img">
+                            <div>
+                                <h3 class="country-name">Brasil</h3>
+                                <p class="capital-name">Capital: Brasília</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="info-label">População (2026):</span><span class="info-value">213,5 Milhões</span></div>
+                            <div class="info-row"><span class="info-label">Moeda Oficial:</span><span class="info-value">Real (BRL)</span></div>
+                            <div class="info-row"><span class="info-label">Idioma Principal:</span><span class="info-value">Português</span></div>
+                            <div class="info-row"><span class="info-label">Ponto de Destaque:</span><span class="info-value">Cristo Redentor</span></div>
+                        </div>
+                    </div>
 
-    <!-- Seção de Curiosidades Globais (Acordeão) -->
-    <section class="faq-section">
-        <div class="container">
-            <h2>Curiosidades e Fatos Globais</h2>
-            <p class="subtitle">Respostas diretas e fatos surpreendentes sobre a geografia e a cultura global.</p>
-            
-            <div class="accordion-group" id="accordion-group">
-                <!-- Gerado Dinamicamente via JavaScript -->
-            </div>
-        </div>
-    </section>
+                    <div class="country-card">
+                        <div class="card-header">
+                            <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?q=80&w=150" alt="Bandeira do Japão" class="country-flag-img">
+                            <div>
+                                <h3 class="country-name">Japão</h3>
+                                <p class="capital-name">Capital: Tóquio</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="info-label">População (2026):</span><span class="info-value">122,4 Milhões</span></div>
+                            <div class="info-row"><span class="info-label">Moeda Oficial:</span><span class="info-value">Iene (JPY)</span></div>
+                            <div class="info-row"><span class="info-label">Idioma Principal:</span><span class="info-value">Japonês</span></div>
+                            <div class="info-row"><span class="info-label">Ponto de Destaque:</span><span class="info-value">Monte Fuji</span></div>
+                        </div>
+                    </div>
 
-    <!-- Footer CTA -->
-    <footer class="footer">
-        <div class="container">
-            <h2>Pronto para expandir seu conhecimento geográfico?</h2>
-            <p>Nossa base de dados armazena registros detalhados com as transformações demográficas e geopolíticas mais recentes.</p>
-            <p class="copyright">&copy; 2026 Mundo sem Fronteiras. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+                    <div class="country-card">
+                        <div class="card-header">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=150" alt="Bandeira da França" class="country-flag-img">
+                            <div>
+                                <h3 class="country-name">França</h3>
+                                <p class="capital-name">Capital: Paris</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="info-label">População (2026):</span><span class="info-value">66,7 Milhões</span></div>
+                            <div class="info-row"><span class="info-label">Moeda Oficial:</span><span class="info-value">Euro (EUR)</span></div>
+                            <div class="info-row"><span class="info-label">Idioma Principal:</span><span class="info-value">Francês</span></div>
+                            <div class="info-row"><span class="info-label">Ponto de Destaque:</span><span class="info-value">Torre Eiffel</span></div>
+                        </div>
+                    </div>
 
-    <script src="script.js"></script>
-</body>
-</html>
+                    <div class="country-card">
+                        <div class="card-header">
+                            <img src="https://images.unsplash.com/photo-1524820197278-540916411e20?q=80&w=150" alt="Bandeira da Austrália" class="country-flag-img">
+                            <div>
+                                <h3 class="country-name">Austrália</h3>
+                                <p class="capital-name">Capital: Camberra</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="info-row"><span class="info-label">População (2026):</span><span class="info-value">27,2 Milhões</span></div>
+                            <div class="info-row"><span class="info-label">Moeda Oficial:</span><span class="info-value">Dólar Australiano (AUD)</span></div>
+                            <div class="info-row"><span class="info-label">Idioma Principal:</span><span class="info-value">Inglês</span></div>
+                            <div class="info-row"><span class="info-label">Ponto de Destaque:</span><span class="info-value">Ópera de Sydney</span></div>
+                        </div>
+                    </div>
+
+                    <div class="country-card">
+                        <div class="card-header">
+                            <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?q=8
